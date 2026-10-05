@@ -1,0 +1,46 @@
+{
+ "source": "computed with the mod-11 algorithm in thaiutils-go/PLAN.md; synthetic numbers only",
+ "valid": [
+  "1101700230708",
+  "1234567890121",
+  "3100600123450",
+  "0105556001234",
+  "9999999999994"
+ ],
+ "invalid": [
+  {
+   "input": "1101700230709",
+   "error": "checksum"
+  },
+  {
+   "input": "123456789012",
+   "error": "length"
+  },
+  {
+   "input": "12345678901234",
+   "error": "length"
+  },
+  {
+   "input": "11017002307A8",
+   "error": "non_digit"
+  },
+  {
+   "input": "",
+   "error": "length"
+  }
+ ],
+ "normalize": [
+  {
+   "input": "1-1017-00230-70-8",
+   "output": "1101700230708"
+  },
+  {
+   "input": " 1 1017 00230 70 8 ",
+   "output": "1101700230708"
+  },
+  {
+   "input": "๑๑๐๑๗๐๐๒๓๐๗๐๘",
+   "output": "1101700230708"
+  }
+ ]
+}
